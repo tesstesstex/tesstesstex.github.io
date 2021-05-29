@@ -30,8 +30,21 @@ module.exports = {
     bio: 'Web Engineer / 水族館巡りが趣味',
     contacts: {
       email: 'tesstesstex@gmail.com',
+      facebook: '',
+      telegram: '',
       twitter: 'tesstesstex',
       github: 'tesstesstex',
+      rss: '',
+      vkontakte: '',
+      linkedin: '',
+      instagram: '',
+      line: '',
+      gitlab: '',
+      weibo: '',
+      codepen: '',
+      youtube: '',
+      soundcloud: '',
+      medium: '',
     }
   }
 };
