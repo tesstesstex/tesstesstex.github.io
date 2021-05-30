@@ -27,7 +27,7 @@ module.exports = {
   author: {
     name: 'tesstesstex',
     photo: '/photo.png',
-    bio: 'Web Engineer / 水族館巡りが趣味',
+    bio: '猫と暮らすWeb Engineer',
     contacts: {
       email: 'tesstesstex@gmail.com',
       facebook: '',
