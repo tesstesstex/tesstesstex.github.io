@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
+  url: 'https://tesstesstex.vercel.app',
   pathPrefix: '/',
   title: '一身上の都合',
   subtitle: '作ったものから身の上話まで',
