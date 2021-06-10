@@ -61,6 +61,7 @@ const createPages = async ({ graphql, actions }) => {
   edges.push(result.data.allMicrocmsArticles.edges);
 
   _.each(edges, edge => {
+    console.log(edge);
     if (_.get(edge, 'node.frontmatter.template') === 'page') {
       const slug = edge.node.fields.slug;
       createPage({
