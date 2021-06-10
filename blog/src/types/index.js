@@ -30,6 +30,7 @@ export type MDNode = {
   },
   frontmatter: {
     date: string,
+    slug: string,
     description?: string,
     category?: string,
     tags?: string[],

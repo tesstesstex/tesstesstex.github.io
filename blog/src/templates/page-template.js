@@ -96,7 +96,7 @@ const PageTemplate = ({ data }: Props) => {
 
 export const query = graphql`
   query PageBySlug($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       id
       html
       frontmatter {

@@ -39,8 +39,6 @@ const createPages = async ({ graphql, actions }) => {
           node {
             frontmatter {
               template
-            }
-            fields {
               slug
             }
           }
@@ -61,9 +59,8 @@ const createPages = async ({ graphql, actions }) => {
   edges.push(result.data.allMicrocmsArticles.edges);
 
   _.each(edges, edge => {
-    // console.log(edge);
     if (_.get(edge, 'node.frontmatter.template') === 'page') {
-      const slug = edge.node.fields.slug;
+      const slug = edge.node.frontmatter.slug;
       createPage({
         path: slug,
         component: path.resolve('./src/templates/page-template.js'),

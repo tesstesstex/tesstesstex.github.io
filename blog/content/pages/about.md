@@ -1,6 +1,7 @@
 ---
 title: "About me"
 template: "page"
+slug: "/pages/about"
 socialImage: { publicURL: ''}
 ---
 
