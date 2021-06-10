@@ -6,7 +6,6 @@ const { createFilePath } = require('gatsby-source-filesystem');
 const onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
 
-  console.log(node);
   if (
     node.internal.type === 'MicrocmsArticles' ||
     node.internal.type === 'MarkdownRemark'
