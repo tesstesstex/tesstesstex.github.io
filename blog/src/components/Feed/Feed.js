@@ -24,12 +24,12 @@ const Feed = ({ edges }: Props) => (
           </span>
         </div>
         <h2 className={styles['feed__item-title']}>
-          <Link className={styles['feed__item-title-link']} to={edge.node.articlesId}>{edge.node.title}</Link>
+          <Link className={styles['feed__item-title-link']} to={`/${edge.node.articlesId}`}>{edge.node.title}</Link>
         </h2>
         <p>
-          <Link className={styles['feed__item-description']} to={edge.node.articlesId}>{edge.node.description}</Link>
+          <Link className={styles['feed__item-description']} to={`/${edge.node.articlesId}`}>{edge.node.description}</Link>
           <br />
-          <Link to={edge.node.articlesId}>read more</Link>
+          <Link to={`/${edge.node.articlesId}`}>read more</Link>
         </p>
       </div>
     ))}
