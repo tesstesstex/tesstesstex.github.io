@@ -62,8 +62,6 @@ const createPages = async ({ graphql, actions }) => {
 
   _.each(edges, edge => {
     if (_.get(edge, 'node.frontmatter.template') === 'page') {
-      console.log('\n3--------------------------------\n');
-      console.log(edge);
       const slug = edge.node.fields.slug;
       createPage({
         path: slug,
@@ -72,8 +70,6 @@ const createPages = async ({ graphql, actions }) => {
       });
     } else {
       _.each(edge, ed => {
-        console.log('\n4--------------------------------\n');
-        console.log(ed);
         const slug = ed.node.articlesId;
         createPage({
           path: slug,

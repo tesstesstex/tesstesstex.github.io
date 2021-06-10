@@ -28,6 +28,7 @@ const Post = ({ post }: Props) => {
 
       <div className={styles['post__footer']}>
         <Meta date={date} />
+        {tags && <Tags tags={tags} />}
         <Author />
       </div>
 
