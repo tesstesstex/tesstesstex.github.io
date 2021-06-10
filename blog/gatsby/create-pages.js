@@ -12,26 +12,28 @@ const createPages = async ({ graphql, actions }) => {
   // 404
   createPage({
     path: '/404',
-    component: path.resolve('./src/templates/not-found-template.js')
+    component: path.resolve('./src/templates/not-found-template.js'),
   });
 
   // Tags list
   createPage({
     path: '/tags',
-    component: path.resolve('./src/templates/tags-list-template.js')
+    component: path.resolve('./src/templates/tags-list-template.js'),
   });
 
   // Categories list
   createPage({
     path: '/categories',
-    component: path.resolve('./src/templates/categories-list-template.js')
+    component: path.resolve('./src/templates/categories-list-template.js'),
   });
 
   // Posts and pages from markdown
   const result = await graphql(`
     {
       allMarkdownRemark(
-        filter: { frontmatter: { draft: { ne: true } } }
+        filter: {
+          frontmatter: { template: { eq: "page" }, draft: { ne: true } }
+        }
       ) {
         edges {
           node {
@@ -44,23 +46,40 @@ const createPages = async ({ graphql, actions }) => {
           }
         }
       }
+      allMicrocmsArticles {
+        edges {
+          node {
+            articlesId
+            date
+          }
+        }
+      }
     }
   `);
 
   const { edges } = result.data.allMarkdownRemark;
+  edges.push(result.data.allMicrocmsArticles.edges);
 
-  _.each(edges, (edge) => {
+  _.each(edges, edge => {
     if (_.get(edge, 'node.frontmatter.template') === 'page') {
+      console.log('\n3--------------------------------\n');
+      console.log(edge);
+      const slug = edge.node.fields.slug;
       createPage({
-        path: edge.node.fields.slug,
+        path: slug,
         component: path.resolve('./src/templates/page-template.js'),
-        context: { slug: edge.node.fields.slug }
+        context: { slug },
       });
-    } else if (_.get(edge, 'node.frontmatter.template') === 'post') {
-      createPage({
-        path: edge.node.fields.slug,
-        component: path.resolve('./src/templates/post-template.js'),
-        context: { slug: edge.node.fields.slug }
+    } else {
+      _.each(edge, ed => {
+        console.log('\n4--------------------------------\n');
+        console.log(ed);
+        const slug = ed.node.articlesId;
+        createPage({
+          path: slug,
+          component: path.resolve('./src/templates/post-template.js'),
+          context: { slug },
+        });
       });
     }
   });

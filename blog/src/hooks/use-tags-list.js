@@ -2,13 +2,11 @@
 import { useStaticQuery, graphql } from 'gatsby';
 
 const useTagsList = () => {
-  const { allMarkdownRemark } = useStaticQuery(
+  const { allMicrocmsArticles } = useStaticQuery(
     graphql`
       query TagsListQuery {
-        allMarkdownRemark(
-          filter: { frontmatter: { template: { eq: "post" }, draft: { ne: true } } }
-        ) {
-          group(field: frontmatter___tags) {
+        allMicrocmsArticles{
+          group(field: tags) {
             fieldValue
             totalCount
           }
@@ -17,7 +15,7 @@ const useTagsList = () => {
     `
   );
 
-  return allMarkdownRemark.group;
+  return allMicrocmsArticles.group;
 };
 
 export default useTagsList;

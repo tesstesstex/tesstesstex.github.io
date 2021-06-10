@@ -4,48 +4,47 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Post from '../components/Post';
 import { useSiteMetadata } from '../hooks';
-import type { MarkdownRemark } from '../types';
+// import type { MarkdownRemark } from '../types';
+import type { MicroCMSArticles } from '../types';
 
 type Props = {
   data: {
-    markdownRemark: MarkdownRemark
+    microcmsArticles: MicroCMSArticles
   }
 };
 
 const PostTemplate = ({ data }: Props) => {
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
-  const { frontmatter } = data.markdownRemark;
-  const { title: postTitle, description: postDescription = '', socialImage } = frontmatter;
+  const { title: postTitle, description: postDescription = '' } = data.microcmsArticles;
+  // const { frontmatter } = data.microCMSArticles;
+  // const { title: postTitle, description: postDescription = '' } = frontmatter;
   const metaDescription = postDescription || siteSubtitle;
-  const socialImageUrl = socialImage?.publicURL;
+  // const socialImageUrl = socialImage?.publicURL;
 
   return (
-    <Layout title={`${postTitle} - ${siteTitle}`} description={metaDescription} socialImage={socialImageUrl} >
-      <Post post={data.markdownRemark} />
+    <Layout
+      title={`${postTitle} - ${siteTitle}`}
+      description={metaDescription}
+      // socialImage={socialImageUrl}
+    >
+      <Post post={data.microcmsArticles} />
     </Layout>
   );
 };
 
+export default PostTemplate;
+
 export const query = graphql`
   query PostBySlug($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    microcmsArticles(articlesId: { eq: $slug }) {
       id
-      html
-      fields {
-        slug
-        tagSlugs
-      }
-      frontmatter {
-        date
-        description
-        tags
-        title
-        socialImage {
-          publicURL
-        }
-      }
+      articlesId
+      contents
+      category
+      date
+      description
+      tags
+      title
     }
   }
 `;
-
-export default PostTemplate;

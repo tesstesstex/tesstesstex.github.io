@@ -15,6 +15,7 @@ const Tags = ({ tags, tagSlugs }: Props) => (
         <li className={styles['tags__list-item']} key={tags[i]}>
           <Link to={slug} className={styles['tags__list-item-link']}>
             {tags[i]}
+            {tags[i]}
           </Link>
         </li>
       ))}
