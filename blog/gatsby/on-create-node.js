@@ -6,10 +6,6 @@ const { createFilePath } = require('gatsby-source-filesystem');
 const onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
 
-  console.log('\n10--------------------------------\n');
-  console.log(node);
-  console.log('\n10.1--------------------------------\n');
-  console.log(node.internal.type);
   if (
     node.internal.type === 'MicrocmsArticles' ||
     node.internal.type === 'MarkdownRemark'
@@ -17,7 +13,6 @@ const onCreateNode = ({ node, actions, getNode }) => {
     // typeof node.context.slug !== 'undefined'
   ) {
     if (typeof node.context.slug !== 'undefined') {
-      console.log('\nA-1--------------------------------\n');
       createNodeField({
         node,
         name: 'slug',
@@ -25,8 +20,6 @@ const onCreateNode = ({ node, actions, getNode }) => {
       });
     } else {
       const value = createFilePath({ node, getNode });
-      console.log('\nB-1--------------------------------\n');
-      console.log(value);
       createNodeField({
         node,
         name: 'slug',
