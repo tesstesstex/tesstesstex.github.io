@@ -10,9 +10,6 @@ type Props = {
 };
 
 const markdown = data => {
-  console.log(data)
-  console.log(marked(data))
-  console.log(sanitize(marked(data), { allowedTags: sanitize.defaults.allowedTags.concat(['img']) }))
   return sanitize(marked(data), {
     allowedTags: sanitize.defaults.allowedTags.concat(['img']),
   });
