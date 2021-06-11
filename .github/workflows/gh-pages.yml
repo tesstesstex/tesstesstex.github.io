@@ -9,6 +9,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-18.04
+    env: 
+      X_API_KEY: ${{ secrets.X_API_KEY }}
+      SERVICE_ID: ${{ secrets.SERVICE_ID }}
     steps:
       - uses: actions/checkout@v2
 
