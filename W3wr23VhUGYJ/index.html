@@ -58,76 +58,27 @@
 
         gtag('config', '', {"send_page_view":false});
       }
-      </script><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="icon" href="/favicon-32x32.png?v=e32c0b3d2a5084f236143760168c24ed" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#F7A046"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=e32c0b3d2a5084f236143760168c24ed"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=e32c0b3d2a5084f236143760168c24ed"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=e32c0b3d2a5084f236143760168c24ed"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=e32c0b3d2a5084f236143760168c24ed"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=e32c0b3d2a5084f236143760168c24ed"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=e32c0b3d2a5084f236143760168c24ed"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=e32c0b3d2a5084f236143760168c24ed"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=e32c0b3d2a5084f236143760168c24ed"/><title data-react-helmet="true">Hangouts Chatの雨通知botを爆速で作る - 一身上の都合</title><meta data-react-helmet="true" name="description" content="Google Chat (旧名: Hangouts Chat) のbot を簡単に作る方法"/><meta data-react-helmet="true" property="og:site_name" content="Hangouts Chatの雨通知botを爆速で作る - 一身上の都合"/><meta data-react-helmet="true" property="og:image" content="https://tesstesstex.vercel.app/photo.png"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:title" content="Hangouts Chatの雨通知botを爆速で作る - 一身上の都合"/><meta data-react-helmet="true" name="twitter:description" content="Google Chat (旧名: Hangouts Chat) のbot を簡単に作る方法"/><meta data-react-helmet="true" name="twitter:image" content="https://tesstesstex.vercel.app/photo.png"/><link as="script" rel="preload" href="/webpack-runtime-36374b3a4e5c1d96c5af.js"/><link as="script" rel="preload" href="/framework-2e548999bc5c21d438c9.js"/><link as="script" rel="preload" href="/dc6a8720040df98778fe970bf6c000a41750d3ae-76dc177fd16284b137ef.js"/><link as="script" rel="preload" href="/app-8543c32812504575f251.js"/><link as="script" rel="preload" href="/styles-407fe62976dc5310c43e.js"/><link as="script" rel="preload" href="/cd95ea5cbd2c605f26db819f07999610c9ff4310-bdec052118b4de37631b.js"/><link as="script" rel="preload" href="/component---src-templates-post-template-js-d946fa7b390b8446c82c.js"/><link as="fetch" rel="preload" href="/page-data/2OsBWeOpgTBV/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2758407812.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3827264240.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/825871152.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="Layout-module--layout--3Pyz6"><div><a class="Post-module--post__home-button--16Kl0" href="/">All Articles</a><div><div class="Content-module--content--3p512"><h1 class="Content-module--content__title--2BDW9">Hangouts Chatの雨通知botを爆速で作る</h1><div class="Content-module--content__body--2TrQ-"><p><strong>:warning:この記事は2019/12/06 にQiita に投稿したものです</strong></p>
-<p>@murs313 さんの<a href="https://qiita.com/murs13/items/abc2b124d53e2ed54a02">Slackの雨通知botを爆速で作る【メッ●●】</a>を読み、
-早速同じ物を作ろうと思いましたが、弊社はSlackが使えませんでした。</p>
-<p>というわけで<strong>Hangouts Chat版</strong>雨通知botを作ってみました。
-GASだと真似しすぎで作っててつまらないのでPythonとcronで実装してみました。</p>
-<p>※ なおHangouts ChatはG Suiteでのみ使用でき、個人のGoogleアカウントでは現在使用できません。</p>
-<h1>つくったもの</h1>
-<p>テストで送信してみたものがこちら。
-実際は時間を合わせて17:00に送信されるように設定しています。
-<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/342105/da93ccdf-2a24-c9dc-4b94-eb48a3689152.jpeg" />
-Hangouts ChatはMarkdownっぽい記法が使えるのが良いですね。
-（画像では強調表示がうまいこといってませんが……）</p>
-<h1>つかったもの</h1>
+      </script><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="icon" href="/favicon-32x32.png?v=e32c0b3d2a5084f236143760168c24ed" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#F7A046"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=e32c0b3d2a5084f236143760168c24ed"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=e32c0b3d2a5084f236143760168c24ed"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=e32c0b3d2a5084f236143760168c24ed"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=e32c0b3d2a5084f236143760168c24ed"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=e32c0b3d2a5084f236143760168c24ed"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=e32c0b3d2a5084f236143760168c24ed"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=e32c0b3d2a5084f236143760168c24ed"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=e32c0b3d2a5084f236143760168c24ed"/><title data-react-helmet="true">素人からエンジニアになった経緯 - 一身上の都合</title><meta data-react-helmet="true" name="description" content="経緯まとめ"/><meta data-react-helmet="true" property="og:site_name" content="素人からエンジニアになった経緯 - 一身上の都合"/><meta data-react-helmet="true" property="og:image" content="https://tesstesstex.vercel.app/photo.png"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:title" content="素人からエンジニアになった経緯 - 一身上の都合"/><meta data-react-helmet="true" name="twitter:description" content="経緯まとめ"/><meta data-react-helmet="true" name="twitter:image" content="https://tesstesstex.vercel.app/photo.png"/><link as="script" rel="preload" href="/webpack-runtime-36374b3a4e5c1d96c5af.js"/><link as="script" rel="preload" href="/framework-2e548999bc5c21d438c9.js"/><link as="script" rel="preload" href="/dc6a8720040df98778fe970bf6c000a41750d3ae-76dc177fd16284b137ef.js"/><link as="script" rel="preload" href="/app-8543c32812504575f251.js"/><link as="script" rel="preload" href="/styles-407fe62976dc5310c43e.js"/><link as="script" rel="preload" href="/cd95ea5cbd2c605f26db819f07999610c9ff4310-bdec052118b4de37631b.js"/><link as="script" rel="preload" href="/component---src-templates-post-template-js-d946fa7b390b8446c82c.js"/><link as="fetch" rel="preload" href="/page-data/W3wr23VhUGYJ/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2758407812.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3827264240.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/825871152.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="Layout-module--layout--3Pyz6"><div><a class="Post-module--post__home-button--16Kl0" href="/">All Articles</a><div><div class="Content-module--content--3p512"><h1 class="Content-module--content__title--2BDW9">素人からエンジニアになった経緯</h1><div class="Content-module--content__body--2TrQ-"><p>度々話題になるプログラミングスクールが最近また賑わっているようなので、<br />参考までに自分が素人(ここでは非情報系出身という意味で使っています)からエンジニア歴6 年目になるまでの経緯を書いておこうと思います。  </p>
+<h3>大学</h3>
+<p>地方国立大の理系学部在学中に、趣味でWeb 開発を少々かじったり、研究での計算などの自動化にPython, VBA をすこーし使ったりしていました。<br />B1 のころ、例にもれずPython の環境構築に躓いていた記憶があります。  </p>
+<h3>就職</h3>
+<p>B4 の遅い時期に就活を始めて、学部と多少関連もあった業種の地方中小メーカーに就職しました。<br />1 年目は文字通りの土方の部門に配属され、ザ･ブルーカラー、ああこれが3K か、という感じの期間を送りました。<br />晩夏〜初秋ごろには肉体的にも精神的にも限界が近かったので、人事部長に異動を直談判(当然その段階では受け入れられませんでしたが)するなどしていました。<br />業務ではもともと効率厨だったり面倒くさがりだったために、書類作成をVBA で自動化して全社に導入されたり、プライベートではjQuery を使ったWeb アプリを作って遊んでみたりもしていました。  </p>
+<p>｢プログラミングで業務改善とかするの楽しいなー｣と思って2 年目になる直前の異動希望調査で第一志望にシステム部門と回答したところ、システム部門の人員不足もあり異動が通りました。ここが <strong>人生のターニングポイント</strong> でした。  </p>
+<p>無事社内SE への転身に成功して、太古のメインフレームに悪戦苦闘したり、Vue.js を使って社内のポータルの開発をしたり、シェルやらPython で自動化をしたり、オンプレのサーバーやルーターの管理をしたりといろいろな経験を積むことができました。3 年目になるころにはプライベートでしょぼい身内向けWeb アプリをリリースして喜んでいました。  </p>
+<h3>転職</h3>
+<p>業務的に区切りがついたことと、自分の市場価値を知ってみたかったこともあり、転職を決意しました。<br />何社か面接を受けたところ、意外にもどこも好反応を頂けて嬉しかったのを覚えています。具体的には「独学ができ、実務経験があり、部署異動を談判したり自作ツール全社展開するような行動力？がある」といった経歴を評価頂いたようでした。  </p>
+<p>こうして現在は主に社内向けのWeb サービスの開発に勤しんでいるわけですが、ありがたいことにそこそこ貰えてぼちぼち不自由のない生活を送れています。  </p>
+<h3>思うこと</h3>
+<p>頭で「参考までに」と書きましたが、自分はかなり運が良かった方だと思っているので、正直参考になるかは怪しいです。<br />こんな経歴の人間からこれからスクールに通おうか迷っている方に言えることがあるとすれば、  </p>
 <ul>
-<li><strong>CentOS 8</strong><br />cronで定期実行します。</li>
-<li><strong>Python 3.6.8</strong>  </li>
-<li><strong>Hangouts Chat の incoming webhook</strong></li>
-<li><strong><a href="http://weather.livedoor.com/weather_hacks/webservice">livedoorお天気API</a></strong></li>
+<li><p>スクール行くなら選ぶべき<br />自分はスクールに行ったことはないので詳しくはわからないのでアレですが、<br />学ぶ言語と最終的にどこまでできるようになるのか、みたいなカリキュラムが詳しくなさそうなところはよろしくないかもしれないですね。<br />エンジニアの友人とかいれば、大丈夫そうか聞いてみてもいいかも？  </p>
+</li>
+<li><p>スクールに行かなくても独学はできる！<br />今どきはどんどん便利になっているようで、PC やスマホで勉強できる手段が豊富にあります。その教材の良し悪しを見分けるのはスクールと同じく難しいとは思いますが、Web 上のコンテンツだと一部または全部が無料で公開されているものも多いです。<br />なのでその無料分をまず一回やってみて、課金してそのコンテンツを続けるか考えれば良いと思います。<br />⚠️ただ始めるにあたって色々インストールする必要があるものは、後に違う教材を選んだときに競合が起きて面倒なことが起きる可能性がなきにしもあらずです。注意。<br />最近はWeb 上で1 から10 まで完結する(つまりインストールとかいらない)サービスもあるはずなのでそっちの方がおすすめかも。  </p>
+</li>
+<li><p>GAS(Google Apps Script) やVBA を触ってみよう<br />Excel やGoogle Spreadsheet を仕事で触れる機会も多いと思います。そういう意味で結構とっつきやすいかと思うので、Excel VBA やGAS を触ってみると良いかもです。<br />題材がないとなかなか覚えるのは難しいものですが、ふだんExcel でデータをいじくっていると、｢この単純作業めんどくさいなー｣とか｢よくケアレスミスしちゃうなー｣とかあったりしませんか？そういうものなんてまさにうってつけの題材です。<br />意外と世の中には非情報系出身のエンジニアも多いですが、その中でも最初に触ったのはVBA と言っていた方は複数出会ったことがありますしいかがでしょうか。<br />GAS は文法的にはJavaScript やTypeScript とほぼ同じなので、Web 系の開発に興味がある方はこちらの方もおすすめ。</p>
+</li>
+<li><p>スクール行くために仕事を辞めるのはリスキー！<br />本気でスクールのために仕事やめようと思っている人は、一旦冷静になって、誰か相談しましょう。<br />相談できる家族や友人がいない場合は転職エージェントに登録してエージェントの方とお話しするのも良いでしょう。  </p>
+</li>
 </ul>
-<h1>Hangouts ChatへのPOST</h1>
-<p>Hangouts Chat は incoming webhook が使用できます。
-@iitenkida7 さんの <a href="https://qiita.com/iitenkida7/items/3c8f9f8f6ee1e809558d">[超簡単]Hangouts Chat の incoming webhooks を使ってAPIから簡単にメッセージを投稿する</a>を参考にさせて頂きました。</p>
-<h1>Pythonのソースコード</h1>
-<pre><code>import requests
-
-weather_url = 'http://weather.livedoor.com/forecast/webservice/json/v1?city=130010' # Tokyo
-resp = requests.get(weather_url)
-data = resp.json()
-
-# 一部ぼかしていますがコピペでおk
-webhook_url = "https://chat.googleapis.com/v1/spaces/HOGEHOGE/messages?key={YOUR_KEY}&amp;token={YOUR_TOKEN}" 
-
-tomorrow_weather = data['forecasts'][1]
-telop = tomorrow_weather['telop']
-max_temp = tomorrow_weather['temperature']['max']
-min_temp = tomorrow_weather['temperature']['min']
-image = tomorrow_weather['image']['url']
-
-text = ''
-text += '明日の天気は'
-text += '*' + telop + '*'
-text += 'です。\n'
-# なぜかmaxとminが時々取得できない
-if max_temp is not None:
-    text += '最高気温'
-    text += max_temp.get('celsius')
-    text += '℃'
-if min_temp is not None:
-    text += '/最低気温'
-    text += min_temp.get('celsius')
-    text += '℃\n'
-text += image
-
-content = {"text": text}
-response = requests.post(webhook_url, json=content)
-</code></pre>
-<h1>cronの設定</h1>
-<p>cronの設定は<a href="https://eng-entrance.com/linux-command-crontab">こちら</a>が参考になると思います。</p>
-<p>cronの設定を行うには<code>crontab -e</code>を叩きましょう。</p>
-<pre><code>$ crontab -e
-</code></pre>
-<p>するとVimで設定ファイルが開くので、実行する時間と実行するコマンドを入力しましょう。
-今回はホームディレクトリ直下に置いたという設定です。</p>
-<pre><code>0 17 * * * python3 ~/weather.py
-</code></pre>
-<p>ファイルを保存してVimを閉じた時に<code>crontab: installing new crontab</code>と表示されれば設定完了です。</p>
-<p>動作確認する場合は、再度<code>crontab -e</code>を開き、</p>
-<pre><code>*/1 * * * * python3 ~/weather.py
-</code></pre>
-<p>のように記述すれば1分おきにコマンドが実行されるようになります。</p>
-<h1>感想</h1>
-<p>参考にさせていただいたリンクがわかりやすかったので特に詰まることなく設定できました。</p>
-</div></div></div><div class="Post-module--post__footer--3WzWU"><div><p class="Meta-module--meta__date--29eD7">Published <!-- -->Mar 26, 2020</p></div><div class="Tags-module--tags--1L_ct"><ul class="Tags-module--tags__list--91FqN"><li class="Tags-module--tags__list-item--1M30P"><a class="Tags-module--tags__list-item-link--3SL_8" href="/tag/python-3">Python 3</a></li></ul></div><div class="Author-module--author--2Yefr"><p>猫と暮らすWeb Engineer<a class="Author-module--author__bio-twitter--n-O9n" href="https://www.twitter.com/tesstesstex" rel="noopener noreferrer" target="_blank"><strong>tesstesstex</strong> on Twitter</a></p></div></div><div class="Post-module--post__comments--25y6I"></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/2OsBWeOpgTBV";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-2d6529c0e24a4fee3d05.js"],"app":["/app-8543c32812504575f251.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-241020a1cf7d0f317bbe.js"],"component---src-templates-categories-list-template-js":["/component---src-templates-categories-list-template-js-d73989cbc322c1a11f13.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-da3bd38e56e030c0392f.js"],"component---src-templates-index-template-js":["/component---src-templates-index-template-js-99b97479dfa102b0dbb9.js"],"component---src-templates-not-found-template-js":["/component---src-templates-not-found-template-js-f32b1d58317994f4a3d4.js"],"component---src-templates-page-template-js":["/component---src-templates-page-template-js-3a73bf96ba29710a9750.js"],"component---src-templates-post-template-js":["/component---src-templates-post-template-js-d946fa7b390b8446c82c.js"],"component---src-templates-tag-template-js":["/component---src-templates-tag-template-js-23d102a89836c8036616.js"],"component---src-templates-tags-list-template-js":["/component---src-templates-tags-list-template-js-05da161d12bb8cd891a0.js"]};/*]]>*/</script><script src="/polyfill-2d6529c0e24a4fee3d05.js" nomodule=""></script><script src="/component---src-templates-post-template-js-d946fa7b390b8446c82c.js" async=""></script><script src="/cd95ea5cbd2c605f26db819f07999610c9ff4310-bdec052118b4de37631b.js" async=""></script><script src="/styles-407fe62976dc5310c43e.js" async=""></script><script src="/app-8543c32812504575f251.js" async=""></script><script src="/dc6a8720040df98778fe970bf6c000a41750d3ae-76dc177fd16284b137ef.js" async=""></script><script src="/framework-2e548999bc5c21d438c9.js" async=""></script><script src="/webpack-runtime-36374b3a4e5c1d96c5af.js" async=""></script></body></html>
+<p>偉そうに長々と語ってしまいましたが、それくらいでしょうか🤔<br />なにかの参考になれば幸いです。</p>
+</div></div></div><div class="Post-module--post__footer--3WzWU"><div><p class="Meta-module--meta__date--29eD7">Published <!-- -->Mar 30, 2021</p></div><div class="Tags-module--tags--1L_ct"><ul class="Tags-module--tags__list--91FqN"></ul></div><div class="Author-module--author--2Yefr"><p>猫と暮らすWeb Engineer<a class="Author-module--author__bio-twitter--n-O9n" href="https://www.twitter.com/tesstesstex" rel="noopener noreferrer" target="_blank"><strong>tesstesstex</strong> on Twitter</a></p></div></div><div class="Post-module--post__comments--25y6I"></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/W3wr23VhUGYJ";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-2d6529c0e24a4fee3d05.js"],"app":["/app-8543c32812504575f251.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-241020a1cf7d0f317bbe.js"],"component---src-templates-categories-list-template-js":["/component---src-templates-categories-list-template-js-d73989cbc322c1a11f13.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-da3bd38e56e030c0392f.js"],"component---src-templates-index-template-js":["/component---src-templates-index-template-js-99b97479dfa102b0dbb9.js"],"component---src-templates-not-found-template-js":["/component---src-templates-not-found-template-js-f32b1d58317994f4a3d4.js"],"component---src-templates-page-template-js":["/component---src-templates-page-template-js-3a73bf96ba29710a9750.js"],"component---src-templates-post-template-js":["/component---src-templates-post-template-js-d946fa7b390b8446c82c.js"],"component---src-templates-tag-template-js":["/component---src-templates-tag-template-js-23d102a89836c8036616.js"],"component---src-templates-tags-list-template-js":["/component---src-templates-tags-list-template-js-05da161d12bb8cd891a0.js"]};/*]]>*/</script><script src="/polyfill-2d6529c0e24a4fee3d05.js" nomodule=""></script><script src="/component---src-templates-post-template-js-d946fa7b390b8446c82c.js" async=""></script><script src="/cd95ea5cbd2c605f26db819f07999610c9ff4310-bdec052118b4de37631b.js" async=""></script><script src="/styles-407fe62976dc5310c43e.js" async=""></script><script src="/app-8543c32812504575f251.js" async=""></script><script src="/dc6a8720040df98778fe970bf6c000a41750d3ae-76dc177fd16284b137ef.js" async=""></script><script src="/framework-2e548999bc5c21d438c9.js" async=""></script><script src="/webpack-runtime-36374b3a4e5c1d96c5af.js" async=""></script></body></html>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[一身上の都合]]></title><description><![CDATA[作ったものから身の上話まで]]></description><link>https://tesstesstex.vercel.app</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 11 Jun 2021 13:34:25 GMT</lastBuildDate><item><title><![CDATA[YouTube Data API で登録済みチャンネルの中からライブ配信中のものだけ取得しようとしたがQuota の上限に引っかかった]]></title><description><![CDATA[YouTube Data API で何かをつくるにはQuota 制限のせいで実用的なものは難しいかもしれない。]]></description><link>https://tesstesstex.vercel.appmvs_aydhbjt9</link><guid isPermaLink="false">https://tesstesstex.vercel.appmvs_aydhbjt9</guid><pubDate>Sun, 30 May 2021 11:10:32 GMT</pubDate><content:encoded>YouTube 配信開始の通知はGoogle アカウントへのメールか、スマホへのポップアップ通知しかないので、自分でAPI 叩いてDiscord とかに通知飛ばせるようにするかと思いちょっとしたツールを作りました。  
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[一身上の都合]]></title><description><![CDATA[作ったものから身の上話まで]]></description><link>https://tesstesstex.vercel.app</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 12 Jun 2021 04:45:18 GMT</lastBuildDate><item><title><![CDATA[YouTube Data API で登録済みチャンネルの中からライブ配信中のものだけ取得しようとしたがQuota の上限に引っかかった]]></title><description><![CDATA[YouTube Data API で何かをつくるにはQuota 制限のせいで実用的なものは難しいかもしれない。]]></description><link>https://tesstesstex.vercel.appmvs_aydhbjt9</link><guid isPermaLink="false">https://tesstesstex.vercel.appmvs_aydhbjt9</guid><pubDate>Sun, 30 May 2021 11:10:32 GMT</pubDate><content:encoded>YouTube 配信開始の通知はGoogle アカウントへのメールか、スマホへのポップアップ通知しかないので、自分でAPI 叩いてDiscord とかに通知飛ばせるようにするかと思いちょっとしたツールを作りました。  
 
 
   
@@ -29,7 +29,56 @@ Quota 上限の開放に関しては[個人だと難しいみたい](https://sta
 [tesstesstex/stream_now](https://github.com/tesstesstex/stream_now)
 
 
-</content:encoded></item><item><title><![CDATA[Vue CLI でGoogleAppsScript アプリ を作成するまで]]></title><description><![CDATA[Vue CLI を使用したSPA をWebpack でなんとかGAS 上にデプロイできるようにならないかやってみた ]]></description><link>https://tesstesstex.vercel.appUZl-L_vYqclV</link><guid isPermaLink="false">https://tesstesstex.vercel.appUZl-L_vYqclV</guid><pubDate>Mon, 01 Feb 2021 19:10:32 GMT</pubDate><content:encoded># VueCLI4 でGoogleAppsScript アプリを作成する
+</content:encoded></item><item><title><![CDATA[素人からエンジニアになった経緯]]></title><description><![CDATA[経緯まとめ]]></description><link>https://tesstesstex.vercel.appW3wr23VhUGYJ</link><guid isPermaLink="false">https://tesstesstex.vercel.appW3wr23VhUGYJ</guid><pubDate>Tue, 30 Mar 2021 15:00:00 GMT</pubDate><content:encoded>度々話題になるプログラミングスクールが最近また賑わっているようなので、  
+参考までに自分が素人(ここでは非情報系出身という意味で使っています)からエンジニア歴6 年目になるまでの経緯を書いておこうと思います。  
+
+### 大学
+地方国立大の理系学部在学中に、趣味でWeb 開発を少々かじったり、研究での計算などの自動化にPython, VBA をすこーし使ったりしていました。  
+B1 のころ、例にもれずPython の環境構築に躓いていた記憶があります。  
+
+### 就職
+B4 の遅い時期に就活を始めて、学部と多少関連もあった業種の地方中小メーカーに就職しました。  
+1 年目は文字通りの土方の部門に配属され、ザ･ブルーカラー、ああこれが3K か、という感じの期間を送りました。  
+晩夏〜初秋ごろには肉体的にも精神的にも限界が近かったので、人事部長に異動を直談判(当然その段階では受け入れられませんでしたが)するなどしていました。  
+業務ではもともと効率厨だったり面倒くさがりだったために、書類作成をVBA で自動化して全社に導入されたり、プライベートではjQuery を使ったWeb アプリを作って遊んでみたりもしていました。  
+
+｢プログラミングで業務改善とかするの楽しいなー｣と思って2 年目になる直前の異動希望調査で第一志望にシステム部門と回答したところ、システム部門の人員不足もあり異動が通りました。ここが **人生のターニングポイント** でした。  
+
+無事社内SE への転身に成功して、太古のメインフレームに悪戦苦闘したり、Vue.js を使って社内のポータルの開発をしたり、シェルやらPython で自動化をしたり、オンプレのサーバーやルーターの管理をしたりといろいろな経験を積むことができました。3 年目になるころにはプライベートでしょぼい身内向けWeb アプリをリリースして喜んでいました。  
+
+### 転職
+業務的に区切りがついたことと、自分の市場価値を知ってみたかったこともあり、転職を決意しました。  
+何社か面接を受けたところ、意外にもどこも好反応を頂けて嬉しかったのを覚えています。具体的には「独学ができ、実務経験があり、部署異動を談判したり自作ツール全社展開するような行動力？がある」といった経歴を評価頂いたようでした。  
+
+こうして現在は主に社内向けのWeb サービスの開発に勤しんでいるわけですが、ありがたいことにそこそこ貰えてぼちぼち不自由のない生活を送れています。  
+
+### 思うこと
+頭で「参考までに」と書きましたが、自分はかなり運が良かった方だと思っているので、正直参考になるかは怪しいです。  
+こんな経歴の人間からこれからスクールに通おうか迷っている方に言えることがあるとすれば、  
+
+- スクール行くなら選ぶべき  
+自分はスクールに行ったことはないので詳しくはわからないのでアレですが、  
+学ぶ言語と最終的にどこまでできるようになるのか、みたいなカリキュラムが詳しくなさそうなところはよろしくないかもしれないですね。  
+エンジニアの友人とかいれば、大丈夫そうか聞いてみてもいいかも？  
+
+- スクールに行かなくても独学はできる！  
+今どきはどんどん便利になっているようで、PC やスマホで勉強できる手段が豊富にあります。その教材の良し悪しを見分けるのはスクールと同じく難しいとは思いますが、Web 上のコンテンツだと一部または全部が無料で公開されているものも多いです。  
+なのでその無料分をまず一回やってみて、課金してそのコンテンツを続けるか考えれば良いと思います。  
+⚠️ただ始めるにあたって色々インストールする必要があるものは、後に違う教材を選んだときに競合が起きて面倒なことが起きる可能性がなきにしもあらずです。注意。  
+最近はWeb 上で1 から10 まで完結する(つまりインストールとかいらない)サービスもあるはずなのでそっちの方がおすすめかも。  
+
+- GAS(Google Apps Script) やVBA を触ってみよう  
+Excel やGoogle Spreadsheet を仕事で触れる機会も多いと思います。そういう意味で結構とっつきやすいかと思うので、Excel VBA やGAS を触ってみると良いかもです。  
+題材がないとなかなか覚えるのは難しいものですが、ふだんExcel でデータをいじくっていると、｢この単純作業めんどくさいなー｣とか｢よくケアレスミスしちゃうなー｣とかあったりしませんか？そういうものなんてまさにうってつけの題材です。  
+意外と世の中には非情報系出身のエンジニアも多いですが、その中でも最初に触ったのはVBA と言っていた方は複数出会ったことがありますしいかがでしょうか。  
+GAS は文法的にはJavaScript やTypeScript とほぼ同じなので、Web 系の開発に興味がある方はこちらの方もおすすめ。
+
+- スクール行くために仕事を辞めるのはリスキー！  
+本気でスクールのために仕事やめようと思っている人は、一旦冷静になって、誰か相談しましょう。  
+相談できる家族や友人がいない場合は転職エージェントに登録してエージェントの方とお話しするのも良いでしょう。  
+
+偉そうに長々と語ってしまいましたが、それくらいでしょうか🤔  
+なにかの参考になれば幸いです。</content:encoded></item><item><title><![CDATA[Vue CLI でGoogleAppsScript アプリ を作成するまで]]></title><description><![CDATA[Vue CLI を使用したSPA をWebpack でなんとかGAS 上にデプロイできるようにならないかやってみた ]]></description><link>https://tesstesstex.vercel.appUZl-L_vYqclV</link><guid isPermaLink="false">https://tesstesstex.vercel.appUZl-L_vYqclV</guid><pubDate>Mon, 01 Feb 2021 19:10:32 GMT</pubDate><content:encoded># VueCLI4 でGoogleAppsScript アプリを作成する
 
 GoogleAppsScript (以下GAS) で簡易なWeb サイトやアプリケーションが作成できるのですが、  
 それをVueCLI を用いて作成してみました。  
@@ -428,4 +477,317 @@ $ crontab -e
 
 # 感想
 参考にさせていただいたリンクがわかりやすかったので特に詰まることなく設定できました。
+</content:encoded></item><item><title><![CDATA[Flask 使ったAPI サーバーの基本]]></title><description><![CDATA[Flask で簡単なAPI サーバー立ててファイルをアップロードしてみる]]></description><link>https://tesstesstex.vercel.appbsRqu6S68Br1</link><guid isPermaLink="false">https://tesstesstex.vercel.appbsRqu6S68Br1</guid><pubDate>Fri, 04 Oct 2019 03:00:00 GMT</pubDate><content:encoded>**:warning:この記事は2019/10/04 にQiita に投稿したものです**
+
+# TL; DR
+
+FlaskでファイルアップロードAPIを実装し、REST Clientで叩きました。
+
+ - [ソースコード(Github)](https://github.com/tesstesstex/API_TEST)
+
+# はじめに
+この記事ではFlaskで簡単なGETのAPIを実装するところから、
+実際にファイルをPOSTするAPIを実装するところまでを、3 Stepsで記載しています。
+Flaskにあまり馴染みが無い方も超簡単にファイルアップロードAPIできるようになれます（きっと）。
+
+## 環境
+- Python 3.7
+- Flask 1.1
+- VSCode 1.38
+
+&gt;ディレクトリ構成
+/
+├ data/
+├ \_\_init\_\_.py
+├ api.py
+├ call.http
+├ face.png
+└ requirements.txt
+
+# 1. APIの実装(JSONのGET)
+
+FlaskでのAPIの実装マジで簡単。やったぜ。
+
+## 1-1. 実装
+
+```python:api.py
+from flask import Flask, jsonify
+
+app = Flask(__name__)
+
+
+@app.route(&apos;/api/item&apos;, methods=[&apos;GET&apos;])
+def get_item():
+   item = {&quot;item_name&quot;: &apos;hogehoge&apos;}
+
+   return jsonify(item) 
+
+if __name__ == &apos;__main__&apos;:
+    app.run(debug=True)
+```
+これだけ。やったぜ。
+
+## 1-2. 叩く
+
+さっそく試しに叩いてみよう！
+......あれよく考えたらあんまり叩き方知らないな？(情弱)
+
+### 1-2-0. REST Client
+
+ググってみたら次の記事を見つけました。
+
+- [VS Code上でHTTPリクエストを送信し、VS Code上でレスポンスを確認できる「REST Client」拡張の紹介](https://qiita.com/toshi0607/items/c4440d3fbfa72eac840c)
+
+&gt;REST Client allows you to send HTTP request and view the response in Visual Studio Code directly.
+
+VSCode上で HTTP リクエストができるとな？便利そう。
+早速 [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) を入れて叩いてみました。
+
+### 1-2-1. Flask起動
+
+```sh
+$ python api.py 
+* Serving Flask app &quot;api&quot; (lazy loading)
+* Environment: production
+  WARNING: This is a development server. Do not use it in a production deployment.
+  Use a production WSGI server instead.
+* Debug mode: on
+* Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+* Restarting with stat
+* Debugger is active!
+* Debugger PIN: 111-858-152
+```
+
+### 1-2-2. リクエスト
+```:call.http
+### GET item
+GET http://localhost:5000/api/item
+```
+Cmd + Option + R で送信！　（Windows は Ctl + Alt + R）
+
+### 1-2-3. 結果
+
+```http:response
+HTTP/1.0 200 OK
+Content-Type: application/json
+Content-Length: 30
+Server: Werkzeug/0.16.0 Python/3.7.3
+Date: Thu, 03 Oct 2019 16:54:12 GMT
+
+{
+  &quot;item_name&quot;: &quot;hogehoge&quot;
+}
+```
+
+やったぜ。
+
+# 2. API 実装(ユーザー情報のPOST)
+GET はうまくいったので POST も試してみよう。
+ということでまずはFlaskでAPIを実装。
+
+## 2-1. 実装
+```python:api.py
+from flask import Flask, jsonify, request
+import bleach
+
+app = Flask(__name__)
+
+TOKEN = &apos;YOUR_TOKEN&apos;
+
+@app.route(&apos;/api/v1/user&apos;, methods=[&apos;POST&apos;])
+def add_user():
+    # check token
+    header = request.headers.get(&apos;Authorization&apos;, None)
+    _, token = header.split()
+    if token != TOKEN:
+        return jsonify({&apos;Forbidden&apos;: &apos;Access is denied&apos;}), 403
+
+    # method check
+    if request.method != &apos;POST&apos;:
+        return jsonify({&apos;Method Not Allowed&apos;: &apos;Method is invalid.&apos;}), 405
+
+    # create new user
+    new_user = {}
+    for key in request.form.keys():
+        new_user[key] = bleach.clean(request.form.get(key))
+
+    return jsonify(new_user)
+
+
+if __name__ == &apos;__main__&apos;:
+    app.run(debug=True)
+```
+これだけ。やったぜ。
+ほんとはDBと繋いで new_user を登録したりしたんですけど、今回は割愛。
+
+Flask でリクエストを受け取る時は **request** を使用します。
+今回は Content-Type は multipart/form-data で送信するつもりなので、request.form を使用しています。
+他にもパラメータを受け取る場合は request.args 、json を受け取る時は request.json を使用します。
+
+## 2-2. 叩く
+
+### 2-2-1. Flask起動
+さっきと同じようにapi.pyを動かしておきましょう。
+
+### 2-2-2. リクエスト
+```:call.http
+#######
+### POST user info
+POST http://localhost:5000/api/v1/user
+Authorization: Bearer YOUR_TOKEN
+Content-Type: multipart/form-data; boundary=HOGEHOGEBOUNDARY
+
+--HOGEHOGEBOUNDARY
+Content-Disposition: form-data; name=user_name
+
+SAKAMOTO RYOMA
+--HOGEHOGEBOUNDARY
+Content-Disposition: form-data; name=user_email
+
+ryoma.sakamoto@...
+--HOGEHOGEBOUNDARY--
+```
+multipart 形式でPOSTする場合は boundary っていうのを設定するんで、
+送信する要素ごとに **--{your boundary}** を記述して、
+要素の最後は **--{your boundary}--** で締めくくっときましょう。 
+このへんは[RFC7578](https://tools.ietf.org/html/rfc7578)で規定されていますのでご確認ください。
+
+**Content-Disposition** の name が記述されていますが、これはHTMLの
+
+```html:html
+&lt;form&gt;
+ &lt;input name=&quot;user_name&quot;&gt;
+&lt;/form&gt;
+```
+と同じです。
+
+### 2-2-3. 結果
+```http:response
+HTTP/1.0 200 OK
+Content-Type: application/json
+Content-Length: 98
+Server: Werkzeug/0.16.0 Python/3.7.3
+Date: Thu, 03 Oct 2019 17:24:57 GMT
+
+{
+  &quot;user_email&quot;: &quot;tesstesstex@...&quot;,
+  &quot;user_name&quot;: &quot;Tesstess Tex&quot;
+}
+```
+やったぜ。無事POSTできましたね。
+
+# 3. APIの実装(アップロードファイルのPOST)
+さて、ようやく本題です。
+
+ユーザー情報送るなら顔写真とかも送れた方が良いよね？そうでもないですか？
+ファイルアップロードのAPIって実装めんどくさいよなぁと思ってましたが超簡単でした！
+そうFlaskとREST Clientならね。
+
+## 3-1. 実装
+
+```python:api.py
+from flask import Flask, jsonify, request
+import bleach
+
+app = Flask(__name__)
+
+TOKEN = &apos;YOUR_TOKEN&apos;
+
+
+@app.route(&apos;/api/v1/user&apos;, methods=[&apos;POST&apos;])
+def add_user():
+    # check token
+    header = request.headers.get(&apos;Authorization&apos;, None)
+    if header is not None:
+        _, token = header.split()
+        if token != TOKEN:
+            return jsonify({&apos;Forbidden&apos;: &apos;Access is denied&apos;}), 403
+    else:
+        return jsonify({&apos;Forbidden&apos;: &apos;Access is denied&apos;}), 403
+
+    # method check
+    if request.method != &apos;POST&apos;:
+        return jsonify({&apos;Method Not Allowed&apos;: &apos;Method is invalid.&apos;}), 405
+
+    # create new user
+    new_user = {}
+    for key in request.form.keys():
+        new_user[key] = bleach.clean(request.form.get(key))
+
+    # save uploaded file into data folder
+    for file in request.files:
+        if file is None:
+            break
+        upload_file = request.files.get(file)
+        upload_path = &apos;data/%s&apos; % upload_file.filename
+        upload_file.save(upload_path)
+        new_user[file] = upload_file.filename
+
+    return jsonify(new_user)
+
+
+if __name__ == &apos;__main__&apos;:
+    app.run(debug=True)
+```
+これだけ。やったぜ。
+Flaskでファイルを受け取る場合、 **request.files** の中に入っていきます。
+
+## 3-2. 叩く
+### 3-2-1. Flask起動
+さっきと同じようにapi.pyを動かしておきましょう。
+また、事前に顔写真 face.png を api.py と同じディレクトリに置いておきましょう。
+
+### 3-2-2. リクエスト
+```:call.http
+#######
+### OK
+POST http://localhost:5000/api/v1/user
+Authorization: Bearer YOUR_TOKEN
+Content-Type: multipart/form-data; boundary=HOGEHOGEBOUNDARY
+
+--HOGEHOGEBOUNDARY
+Content-Disposition: form-data; name=user_name
+
+Tesstess Tex
+--HOGEHOGEBOUNDARY
+Content-Disposition: form-data; name=user_email
+
+ryoma.sakamoto@...
+--HOGEHOGEBOUNDARY
+Content-Disposition: form-data; name=&quot;file&quot;; filename=&quot;face.png&quot;
+Content-Type: application/octet-stream
+
+&lt; ./face.png
+--HOGEHOGEBOUNDARY--
+```
+
+### 3-2-3. 結果
+```http:response
+HTTP/1.0 200 OK
+Content-Type: application/json
+Content-Length: 98
+Server: Werkzeug/0.16.0 Python/3.7.3
+Date: Thu, 03 Oct 2019 18:01:26 GMT
+
+{
+  &quot;file&quot;: &quot;face.png&quot;,
+  &quot;user_email&quot;: &quot;tesstesstex@...&quot;,
+  &quot;user_name&quot;: &quot;Tesstess Tex&quot;
+}
+```
+dataフォルダをのぞいてみるとちゃんと face.png が保存されていました！
+&lt;img alt=&quot;スクリーンショット 2019-10-04 3.03.35.png&quot; src=&quot;https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/342105/33e79cd6-9b52-9a30-278c-c6dc3d83e1c8.png&quot;&gt;
+くぅ疲、これにて目的達成です。やったぜ。
+
+# 感想
+ほんとFlask はAPI さくっと書けて優秀だなぁと思います。
+普段はAPIはNode.js のnode-fetch だったり、Python のrequests だったりで叩いているのですが、
+curl について調べているときにREST Clientについて知ったので使ってみた次第です。
+
+# 参考
+### Qiita
+ - [トークンを利用した認証・認可 API を実装するとき Authorization: Bearer ヘッダを使っていいのか調べた](https://qiita.com/uasi/items/cfb60588daa18c2ec6f5)
+ 
+### Auth0
+ - [Python と Flask で RESTful API を開発する](https://auth0.com/blog/jp-developing-restful-apis-with-python-and-flask/)
 </content:encoded></item></channel></rss>
